@@ -1,0 +1,38 @@
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(156, 156, 156, 0.5)),
+    url(../../media/imagen5.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  opacity: 1;
+}
+
+.header-texto {
+  border-radius: 40px;
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 2rem;
+}
+
+.header-texto p {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+
+.header-texto h1 {
+  color: rgb(255, 106, 7);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.scroll-icon {
+  color: rgb(255, 106, 7);
+  font-size: 85px;
+  text-decoration: none;
+}
