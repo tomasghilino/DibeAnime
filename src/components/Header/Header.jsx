@@ -25,7 +25,7 @@ const Header = () => {
   useEffect(() => {
     const t = setInterval(
       () => set((state) => (state + 1) % slides.length),
-      4000
+      2500
     );
     return () => clearTimeout(t);
   }, []);
