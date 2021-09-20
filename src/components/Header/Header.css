@@ -1,0 +1,47 @@
+/* Header y fondo */
+
+.header {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.header-texto {
+  border-radius: 40px;
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 2rem;
+}
+
+.header-texto p {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+
+.header-texto h1 {
+  color: rgb(255, 106, 7);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.scroll-icon {
+  color: rgb(255, 106, 7);
+  font-size: 85px;
+  text-decoration: none;
+}
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  will-change: opacity;
+}
