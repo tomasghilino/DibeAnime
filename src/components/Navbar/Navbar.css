@@ -1,0 +1,25 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  background-color: royalblue;
+}
+
+.navbar-logo {
+  margin-left: 2rem;
+}
+
+.navbar-logo:hover {
+  filter: brightness(200%);
+}
+
+.navbar-botones {
+  display: flex;
+  gap: 1rem;
+  margin-right: 2rem;
+}
