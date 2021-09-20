@@ -1,16 +1,17 @@
 import React from 'react';
 import './Navbar.css';
+import logo from './logo.png';
 
 const Navbar = () => {
   return (
     <div className="navbar">
         <div className="navbar-logo">
-          <h1>logo</h1>
+          <img className="logo" src={logo} alt="" />
         </div>
         <div className="navbar-botones">
-          <h1>botones</h1>
-          <h1>botones</h1>
-          <h1>botones</h1>
+          <button className="boton">Inicio</button>
+          <button className="boton">Inicio</button>
+          <button className="boton">Inicio</button>
         </div>
     </div>
   );
