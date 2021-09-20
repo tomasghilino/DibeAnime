@@ -1,0 +1,41 @@
+footer {
+  background-color: black;
+  padding: 2.7rem;
+  font-size: 17px;
+}
+
+footer a,
+h2 {
+  text-decoration: none;
+  color: white;
+}
+
+footer img {
+  height: 100px;
+}
+
+.footer {
+  border-right: 20px white;
+}
+
+.link {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.5s ease;
+}
+
+.link:hover {
+  color: orange;
+}
+
+.link .github-icon {
+  color: white;
+  margin-right: 10px;
+}
+
+.tecnologias img {
+  margin-right: 20px;
+  padding: 1rem;
+}
