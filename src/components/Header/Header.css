@@ -24,8 +24,12 @@
   font-size: 30px;
 }
 
+.header-texto span {
+  font-weight: 800;
+}
+
 .header-texto h1 {
-  color: rgb(255, 106, 7);
+  color: rgb(241, 100, 7);
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }

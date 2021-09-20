@@ -46,7 +46,9 @@ const Header = () => {
 
       <div className="header">
         <div className="container header-texto ">
-          <h1 className="display-1">DibeAnime!</h1>
+          <h1 className="display-1">
+            Dibe<span>Anime!</span>
+          </h1>
           <p className="lead">Información de Anime en un solo lugar.</p>
           <div className="scroll-icon">&or;</div>
         </div>
