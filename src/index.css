@@ -1,13 +1,8 @@
-h1 {
-  color: black;
-  font-size: 25px;
-}
-.red {
-  background-color: red;
-}
-
-.blue {
-  background-color: blue;
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
 }
 
 .main {

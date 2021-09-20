@@ -11,8 +11,8 @@ import Footer from './components/Footer/Footer';
 function App() {
   return (
     <Fragment>
-      <Header />
       <Navbar />
+      <Header />
 
       <div className="main">
         <div className="row">

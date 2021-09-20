@@ -1,40 +1,67 @@
+/* NAVBAR */
 .navbar {
   position: fixed;
+  align-items: center;
+  justify-content: center;
   top: 0;
   width: 100%;
-  height: 4rem;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  z-index: 1;
+}
+.navbar-colored {
+  background-color: rgb(255, 106, 7);
 
-  /* SOMBRA */
+  /* sombra */
   box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.5);
 }
+.navbar-colored .logo {
+  color: black;
+}
 
+.navbar-contenido {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem;
+}
+
+@media (min-width: 768px) {
+  .navbar-contenido {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 4rem;
+    width: 100%;
+  }
+}
+
+/* LOGO */
 .navbar-logo {
-  margin-left: 2rem;
   padding: 1rem 2rem;
-  transition: all 0.3s;
 }
 .navbar-logo:hover {
   filter: brightness(130%);
 }
 .logo {
-  max-height: 3.5rem;
+  color: rgb(255, 106, 7);
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+}
+.logo span {
+  font-weight: 800;
 }
 
+/* BOTONES */
 .navbar-botones {
   display: flex;
-  gap: 1rem;
-  margin-right: 2rem;
 }
 .boton {
   display: inline-block;
   padding: 0.5rem 1rem;
-  border: 2px solid #ffffff;
   border-radius: 0.3rem;
   text-decoration: none;
   font-weight: 400;
@@ -42,8 +69,11 @@
   transition: all 0.2s;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.2);
+  border: 2px solid #ffffff;
+  margin: 0 1rem;
 }
 .boton:hover {
-  color: #000000;
-  background-color: #ffffff;
+  color: black;
+  background-color: rgb(255, 106, 7);
+  border: 2px solid #000000;
 }
