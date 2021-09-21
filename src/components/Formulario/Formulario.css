@@ -1,0 +1,9 @@
+.form-texto {
+  margin-bottom: 1rem;
+
+  color: orange;
+}
+
+.dblock {
+  display: inline-block;
+}

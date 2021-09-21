@@ -21,7 +21,7 @@ function App() {
               <ListaCategorias />
             </div>
           </div>
-          <div className="col-md-10">
+          <div className="col-sm-10">
             <div className="container">
               <Formulario />
               <ListadoBusqueda /> {/* carga condicional mas adelante */}
