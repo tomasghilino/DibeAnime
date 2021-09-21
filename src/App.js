@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 
 //Componentes
 import Header from './components/Header/Header';
@@ -9,6 +9,8 @@ import ListaCategorias from './components/ListaCategorias/ListaCategorias';
 import Footer from './components/Footer/Footer';
 
 function App() {
+  const [busqueda, guardarBusqueda] = useState('');
+
   return (
     <Fragment>
       <Navbar />
@@ -23,7 +25,7 @@ function App() {
           </div>
           <div className="col-sm-10">
             <div className="container">
-              <Formulario />
+              <Formulario guardarBusqueda={guardarBusqueda} />
               <ListadoBusqueda /> {/* carga condicional mas adelante */}
             </div>
           </div>
