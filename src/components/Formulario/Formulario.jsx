@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import Error from '../Error/Error';
+import { AnimeContext } from '../../contexts/AnimeContext';
 import './Formulario.css';
 
-const Formulario = ({ guardarBusqueda }) => {
+const Formulario = () => {
+  const { guardarInputCtx, guardarConsultar } = useContext(AnimeContext);
+
   // states
   const [input, guardarInput] = useState('');
   const [error, guardarError] = useState(false);
@@ -13,8 +16,7 @@ const Formulario = ({ guardarBusqueda }) => {
   };
 
   // cuando usuario da submit
-  const buscarAnime = (e) => {
-    e.preventDefault();
+  const buscarAnime = () => {
     // VALIDACION DEL FORM
     if (input.trim() === '') {
       guardarError(true);
@@ -23,12 +25,20 @@ const Formulario = ({ guardarBusqueda }) => {
     guardarError(false);
 
     // Todo bien, pasar al componente principal
-    guardarBusqueda(input);
+    guardarInputCtx(input);
   };
 
   return (
-    <form onSubmit={buscarAnime} className="mt-5">
-      <div className="form-group text-center container">
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+
+        buscarAnime();
+        guardarConsultar(true);
+      }}
+      className="mt-5"
+    >
+      <div className="form-group text-center container mb-3">
         <label>
           <h2 className="form-texto">Ingrese un Anime o Manga</h2>
         </label>
@@ -36,7 +46,7 @@ const Formulario = ({ guardarBusqueda }) => {
           <input
             type="text"
             placeholder="Ejemplo: Naruto"
-            className="form-control col-md-8"
+            className="form-control col-md-8 mb-4"
             onChange={obtenerInput}
           />
 

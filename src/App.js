@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment } from 'react';
 
 //Componentes
 import Header from './components/Header/Header';
@@ -8,9 +8,10 @@ import ListadoBusqueda from './components/ListadoBusqueda/ListadoBusqueda';
 import ListaCategorias from './components/ListaCategorias/ListaCategorias';
 import Footer from './components/Footer/Footer';
 
-function App() {
-  const [busqueda, guardarBusqueda] = useState('');
+// Providers
+import AnimeProvider from './contexts/AnimeContext';
 
+function App() {
   return (
     <Fragment>
       <Navbar />
@@ -24,9 +25,11 @@ function App() {
             </div>
           </div>
           <div className="col-sm-10">
-            <div className="container">
-              <Formulario guardarBusqueda={guardarBusqueda} />
-              <ListadoBusqueda /> {/* carga condicional mas adelante */}
+            <div className="mb-5">
+              <AnimeProvider>
+                <Formulario />
+                <ListadoBusqueda /> {/* carga condicional mas adelante */}
+              </AnimeProvider>
             </div>
           </div>
         </div>
