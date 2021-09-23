@@ -1,17 +1,22 @@
-.animecard {
-  display: inline-block;
-  overflow: hidden;
-  position: relative;
-  padding-bottom: 100%;
+.animecard-overlay {
+  background: linear-gradient(
+    335deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.7) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  opacity: 0;
+  transition: all 0.3s;
 }
 
-.animecard-img {
-  pointer-events: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+.animecard-overlay:hover {
+  opacity: 1;
 }
 
-.animecard-body {
+.animecard-titulo {
+  background-color: grey;
+  padding: 3px;
+  line-height: 1.2;
+  border-radius: 0.7rem;
+  margin-bottom: 0.5rem;
 }
