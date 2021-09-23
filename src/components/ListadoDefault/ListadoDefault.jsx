@@ -5,11 +5,11 @@ import { AnimeContext } from '../../contexts/AnimeContext';
 
 const ListadoDefault = () => {
   const [busquedaAnime, guardarBusquedaCategorias] = useState([]);
-  const { consultar } = useContext(AnimeContext);
+  const { consultar, categoria } = useContext(AnimeContext);
 
   useEffect(() => {
     const obtenerCategorias = async () => {
-      const url = `https://api.jikan.moe/v3/search/anime?q=&order_by=score&limit=9`;
+      const url = `https://api.jikan.moe/v3/search/anime?q=&order_by=${categoria}&limit=9`;
 
       const animes = await axios.get(url);
 
@@ -17,12 +17,12 @@ const ListadoDefault = () => {
     };
 
     obtenerCategorias();
-  }, []);
+  }, [categoria]);
 
   if (consultar) return null;
   return (
     <Fragment>
-      <h1>Top Rated</h1>
+      <h1>{categoria === 'score' ? 'Top Rated Anime' : 'Popular Anime'}</h1>
 
       <div className="d-inline-flex flex-wrap p-4 row g-5 ">
         {busquedaAnime.map((anime) => (
