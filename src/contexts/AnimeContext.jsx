@@ -15,7 +15,7 @@ const AnimeProvider = (props) => {
   useEffect(() => {
     if (consultar) {
       const obtenerAnimes = async () => {
-        const url = `https://api.jikan.moe/v3/search/anime?q=${input}`;
+        const url = `https://api.jikan.moe/v3/search/anime?q=${input}&limit=12`;
 
         const animes = await axios.get(url);
 
