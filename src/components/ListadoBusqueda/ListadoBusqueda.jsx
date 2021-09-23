@@ -3,9 +3,9 @@ import AnimeCard from '../AnimeCard/AnimeCard';
 import { AnimeContext } from '../../contexts/AnimeContext';
 
 const ListadoBusqueda = () => {
-  const { busquedaAnime } = useContext(AnimeContext);
+  const { busquedaAnime, consultar } = useContext(AnimeContext);
 
-  if (Object.keys(busquedaAnime).length === 0) return null;
+  if (Object.keys(busquedaAnime).length === 0 || !consultar) return null;
   //Busqueda vacia *arreglar*
   return (
     <div className="row g-5">

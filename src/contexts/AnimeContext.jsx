@@ -29,6 +29,7 @@ const AnimeProvider = (props) => {
   return (
     <AnimeContext.Provider
       value={{
+        consultar,
         busquedaAnime,
         guardarConsultar,
         guardarInputCtx,

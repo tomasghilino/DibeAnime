@@ -1,10 +1,11 @@
-import React, { useEffect, useState, Fragment } from 'react';
+import React, { useEffect, useState, Fragment, useContext } from 'react';
 import AnimeCard from '../AnimeCard/AnimeCard';
 import axios from 'axios';
+import { AnimeContext } from '../../contexts/AnimeContext';
 
 const ListadoDefault = () => {
   const [busquedaAnime, guardarBusquedaCategorias] = useState([]);
-  console.log(busquedaAnime);
+  const { consultar } = useContext(AnimeContext);
 
   useEffect(() => {
     const obtenerCategorias = async () => {
@@ -14,11 +15,15 @@ const ListadoDefault = () => {
 
       guardarBusquedaCategorias(animes.data.results);
     };
+
     obtenerCategorias();
   }, []);
+
+  if (consultar) return null;
   return (
     <Fragment>
       <h1>Top Rated</h1>
+
       <div className="d-inline-flex flex-wrap p-4 row g-5 ">
         {busquedaAnime.map((anime) => (
           <AnimeCard key={anime.mal_id} anime={anime} />
