@@ -1,0 +1,17 @@
+.animecard {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 100%;
+}
+
+.animecard-img {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.animecard-body {
+}

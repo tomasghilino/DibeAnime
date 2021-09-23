@@ -1,15 +1,15 @@
 import React from 'react';
+import './AnimeCard.css';
+
 
 const AnimeCard = ({ anime }) => {
   return (
-    <div className="col-lg-3">
-      <div className="card">
-        <img className="card-img-top" src={anime.image_url} alt="" />
-        <div className="card-body">
-          <p className="card-text">{anime.mal_id}</p>
+      <div className="animecard">
+        <img className="animecard-img" src={anime.image_url} alt="" />
+        <div className="animecard-body">
+          <p className="animecard-text">{anime.mal_id}</p>
         </div>
       </div>
-    </div>
   );
 };
 
