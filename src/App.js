@@ -17,24 +17,24 @@ function App() {
     <Fragment>
       <Navbar />
       <Header />
-      <div className="main">
-        <div className="row">
-          <div className="col-md-2">
-            <div className="container">
-              <ListaCategorias />
+      <AnimeProvider>
+        <div className="main">
+          <div className="row">
+            <div className="col-md-2">
+              <div className="container">
+                <ListaCategorias />
+              </div>
             </div>
-          </div>
-          <div className="col-sm-10">
-            <div className="mb-5">
-              <AnimeProvider>
+            <div className="col-sm-10">
+              <div className="mb-5">
                 <Formulario />
                 <ListadoBusqueda />
                 <ListadoDefault />
-              </AnimeProvider>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </AnimeProvider>
       <Footer />
     </Fragment>
   );

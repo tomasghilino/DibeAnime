@@ -10,6 +10,7 @@ const AnimeProvider = (props) => {
   const [input, guardarInputCtx] = useState('');
   const [busquedaAnime, guardarBusquedaAnime] = useState({});
   const [consultar, guardarConsultar] = useState(false);
+  const [categoria, guardarCategoria] = useState('score');
 
   // ejecutar el llamado a la api
   useEffect(() => {
@@ -30,8 +31,10 @@ const AnimeProvider = (props) => {
     <AnimeContext.Provider
       value={{
         consultar,
+        categoria,
         busquedaAnime,
         guardarConsultar,
+        guardarCategoria,
         guardarInputCtx,
       }}
     >
