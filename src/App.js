@@ -6,6 +6,7 @@ import Navbar from './components/Navbar/Navbar';
 import Formulario from './components/Formulario/Formulario';
 import ListadoBusqueda from './components/ListadoBusqueda/ListadoBusqueda';
 import ListaCategorias from './components/ListaCategorias/ListaCategorias';
+import ListadoDefault from './components/ListadoDefault/ListadoDefault';
 import Footer from './components/Footer/Footer';
 
 // Providers
@@ -16,7 +17,6 @@ function App() {
     <Fragment>
       <Navbar />
       <Header />
-
       <div className="main">
         <div className="row">
           <div className="col-md-2">
@@ -28,7 +28,8 @@ function App() {
             <div className="mb-5">
               <AnimeProvider>
                 <Formulario />
-                <ListadoBusqueda /> {/* carga condicional mas adelante */}
+                <ListadoBusqueda />
+                <ListadoDefault />
               </AnimeProvider>
             </div>
           </div>

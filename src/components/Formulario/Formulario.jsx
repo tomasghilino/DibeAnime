@@ -18,14 +18,17 @@ const Formulario = () => {
   // cuando usuario da submit
   const buscarAnime = () => {
     // VALIDACION DEL FORM
+    guardarInputCtx(input);
     if (input.trim() === '') {
       guardarError(true);
+      guardarConsultar(false);
       return;
     }
     guardarError(false);
 
     // Todo bien, pasar al componente principal
-    guardarInputCtx(input);
+
+    guardarConsultar(true);
   };
 
   return (
@@ -34,7 +37,6 @@ const Formulario = () => {
         e.preventDefault();
 
         buscarAnime();
-        guardarConsultar(true);
       }}
       className="mt-5"
     >

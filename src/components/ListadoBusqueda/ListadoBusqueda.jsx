@@ -4,9 +4,9 @@ import { AnimeContext } from '../../contexts/AnimeContext';
 import './ListadoBusqueda.css';
 
 const ListadoBusqueda = () => {
-  const { busquedaAnime } = useContext(AnimeContext);
+  const { busquedaAnime, consultar } = useContext(AnimeContext);
 
-  if (Object.keys(busquedaAnime).length === 0) return null;
+  if (Object.keys(busquedaAnime).length === 0 || !consultar) return null;
   //Busqueda vacia *arreglar*
   return (
     <div className="listado">
