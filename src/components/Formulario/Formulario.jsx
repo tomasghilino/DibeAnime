@@ -52,7 +52,7 @@ const Formulario = () => {
             onChange={obtenerInput}
           />
 
-          <button type="submit" className="btn-lg btn-primary w-100">
+          <button type="submit" className="btn-lg btn-primary w-100 mb-4">
             Buscar
           </button>
         </div>

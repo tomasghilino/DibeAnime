@@ -18,14 +18,9 @@ const AnimeCard = ({ anime }) => {
             <p className="mb-2 fw-bold">
               Episodios: <span>{anime.episodes}</span>
             </p>
-            <button
-              type="button"
-              className="btn btn-primary"
-              data-toggle="modal"
-              data-target="#exampleModal"
-            >
-              Mas Información
-            </button>
+            <Button variant="primary" onClick={() => setModalShow(true)}>
+              Ver Información
+            </Button>
           </div>
         </div>
         <ModalAnimeCard

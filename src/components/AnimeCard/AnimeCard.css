@@ -15,3 +15,11 @@
 .animecard-overlay:hover {
   opacity: 1;
 }
+
+.animecardmodal-bg {
+  background-color: rgb(246, 246, 246);
+}
+
+.sinopsis {
+  background-color: rgb(255, 228, 228);
+}
