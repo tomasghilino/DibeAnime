@@ -1,0 +1,18 @@
+.animecard-overlay {
+  display: flex;
+  flex-direction: column-reverse;
+
+  background: linear-gradient(
+    360deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.7) 35%,
+    rgba(255, 255, 255, 0) 50%
+  );
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.animecard-overlay:hover {
+  opacity: 1;
+  cursor: pointer;
+}
