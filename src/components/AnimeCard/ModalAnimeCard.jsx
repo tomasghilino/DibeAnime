@@ -1,6 +1,10 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
 const ModalAnimeCard = (props) => {
+  const { image_url, title, synopsis, type, episodes, score, rated, members } =
+    props;
   return (
     <Modal
       {...props}
@@ -9,9 +13,7 @@ const ModalAnimeCard = (props) => {
       centered
     >
       <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          Modal heading
-        </Modal.Title>
+        <Modal.Title id="contained-modal-title-vcenter">{title}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <h4>Centered Modal</h4>
