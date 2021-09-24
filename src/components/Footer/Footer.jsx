@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <Fragment>
       <footer>
-        <div className="container d-sm-flex justify-content-around mt-5">
+        <div className="container d-lg-flex justify-content-around mt-5">
           <div>
             <h2 className="mb-5">DibeAnime</h2>
             <ul className="d-flex flex-column footer">

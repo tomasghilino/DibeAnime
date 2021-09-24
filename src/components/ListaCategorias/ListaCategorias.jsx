@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import './ListaCategorias.css';
 import { AnimeContext } from '../../contexts/AnimeContext';
 
 const ListaCategorias = () => {
@@ -8,30 +9,32 @@ const ListaCategorias = () => {
   };
 
   return (
-    <ul className="w-100">
-      <div className="list-group">
-        <button
-          onClick={(e) => {
-            consultarCategoria(e);
-          }}
-          type="button"
-          value="score"
-          className="list-group-item list-group-item-action"
-        >
-          Top Rated Anime
-        </button>
-        <button
-          onClick={(e) => {
-            consultarCategoria(e);
-          }}
-          type="button"
-          value="members"
-          className="list-group-item list-group-item-action"
-        >
-          Popular Anime
-        </button>
-      </div>
-    </ul>
+    <div className="col-md-2 mt-5 zindex">
+      <ul className="lista">
+        <div className="list-group">
+          <button
+            onClick={(e) => {
+              consultarCategoria(e);
+            }}
+            type="button"
+            value="score"
+            className="list-group-item list-group-item-action p-4"
+          >
+            Top Rated Anime
+          </button>
+          <button
+            onClick={(e) => {
+              consultarCategoria(e);
+            }}
+            type="button"
+            value="members"
+            className="list-group-item list-group-item-action p-4"
+          >
+            Popular Anime
+          </button>
+        </div>
+      </ul>
+    </div>
   );
 };
 
