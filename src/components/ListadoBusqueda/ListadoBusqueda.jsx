@@ -9,7 +9,7 @@ const ListadoBusqueda = () => {
   if (Object.keys(busquedaAnime).length === 0 || !consultar) return null;
   //Busqueda vacia *arreglar*
   return (
-    <div className="listado">
+    <div className="d-inline-flex flex-wrap p-4 row g-5">
       {busquedaAnime.map((anime) => (
         <AnimeCard key={anime.mal_id} anime={anime} />
       ))}
