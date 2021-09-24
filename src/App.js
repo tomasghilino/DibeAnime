@@ -20,12 +20,8 @@ function App() {
       <AnimeProvider>
         <div className="main">
           <div className="row">
-            <div className="col-md-2">
-              <div className="container">
-                <ListaCategorias />
-              </div>
-            </div>
-            <div className="col-sm-10">
+            <ListaCategorias />
+            <div className="col-md-10">
               <div className="mb-5">
                 <Formulario />
                 <ListadoBusqueda />
