@@ -1,6 +1,7 @@
 import React, { useEffect, useState, Fragment, useContext } from 'react';
 import AnimeCard from '../AnimeCard/AnimeCard';
 import axios from 'axios';
+import './ListadoDefault.css';
 import { AnimeContext } from '../../contexts/AnimeContext';
 
 const ListadoDefault = () => {
@@ -22,9 +23,10 @@ const ListadoDefault = () => {
   if (consultar) return null;
   return (
     <Fragment>
-      <h1>{categoria === 'score' ? 'Top Rated Anime' : 'Popular Anime'}</h1>
-
-      <div className="d-inline-flex flex-wrap p-4 row g-5 ">
+      <div className="d-inline-flex flex-wrap p-4 row g-5">
+        <h1 className="listado-texto">
+          {categoria === 'score' ? 'Top Rated Anime' : 'Popular Anime'}
+        </h1>
         {busquedaAnime.map((anime) => (
           <AnimeCard key={anime.mal_id} anime={anime} />
         ))}

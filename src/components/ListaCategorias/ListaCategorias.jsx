@@ -7,8 +7,9 @@ const ListaCategorias = () => {
   const consultarCategoria = (e) => {
     guardarCategoria(e.target.value);
   };
+
   return (
-    <div className="col-md-2 mt-5">
+    <div className="col-md-2 mt-5 zindex">
       <ul className="lista">
         <div className="list-group">
           <button
@@ -17,7 +18,7 @@ const ListaCategorias = () => {
             }}
             type="button"
             value="score"
-            className="list-group-item list-group-item-action"
+            className="list-group-item list-group-item-action p-4"
           >
             Top Rated Anime
           </button>
@@ -27,7 +28,7 @@ const ListaCategorias = () => {
             }}
             type="button"
             value="members"
-            className="list-group-item list-group-item-action"
+            className="list-group-item list-group-item-action p-4"
           >
             Popular Anime
           </button>

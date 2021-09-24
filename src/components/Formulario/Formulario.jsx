@@ -44,7 +44,7 @@ const Formulario = () => {
         <label>
           <h2 className="form-texto">Ingrese un Anime o Manga</h2>
         </label>
-        <div className="d-md-flex">
+        <div className="">
           <input
             type="text"
             placeholder="Ejemplo: Naruto"
