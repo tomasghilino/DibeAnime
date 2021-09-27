@@ -29,14 +29,14 @@ const Navbar = () => {
   return (
     <div className={color ? 'navbar' : 'navbar navbar-colored'}>
       <div className="navbar-contenido">
-        <div className="navbar-logo">
-          <a
-           className="logo"
-           onClick={() => scrollInicio()}
-          >
-            Dibe<span>Anime</span>
-          </a>
-        </div>
+        
+        <button
+          className="logo"
+          onClick={() => scrollInicio()}
+        >
+          Dibe<span>Anime</span>
+        </button>
+  
         <div className="navbar-botones">
           <button
            className="boton"

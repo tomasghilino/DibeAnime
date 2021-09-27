@@ -45,12 +45,6 @@
 }
 
 /* LOGO */
-.navbar-logo {
-  padding: 1rem 2rem;
-}
-.navbar-logo:hover {
-  filter: brightness(130%);
-}
 .logo {
   color: rgb(255, 106, 7);
   font-family: "Roboto", sans-serif;
@@ -58,9 +52,16 @@
   font-weight: 400;
   text-align: center;
   text-decoration: none;
+  border: none;
+  background-color: transparent;
+  padding: 1rem;
 }
 .logo span {
   font-weight: 800;
+}
+.logo:hover {
+  cursor: pointer;
+  filter: brightness(125%);
 }
 
 /* BOTONES */
