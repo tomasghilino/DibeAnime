@@ -6,7 +6,7 @@
   top: 0;
   width: 100%;
   transition: all 0.3s;
-  z-index: 1;
+  z-index: 3;
 }
 .navbar-colored {
   background-color: rgb(255, 106, 7);
@@ -46,7 +46,7 @@
 }
 .logo {
   color: rgb(255, 106, 7);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 3rem;
   font-weight: 400;
   text-align: center;
