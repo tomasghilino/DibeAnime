@@ -4,23 +4,23 @@ import { IconContext } from 'react-icons';
 import './Footer.css';
 
 const Footer = () => {
+  const scrollInicio = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
   return (
     <Fragment>
       <footer>
         <div className="container d-lg-flex justify-content-around mt-5">
           <div>
-            <h2 className="mb-5">DibeAnime</h2>
-            <ul className="d-flex flex-column footer">
-              <a href="#!" className="link">
-                &raquo; Inicio
-              </a>
-              <a href="#!" className="link">
-                &raquo; Búsqueda
-              </a>
-              <a href="#!" className="link">
-                &raquo; Nosotros
-              </a>
-            </ul>
+            <button
+              className="logo p-0 lh-1 mb-5 fs-1"
+              onClick={() => scrollInicio()}
+            >
+              Dibe<span>Anime</span>
+            </button>
           </div>
 
           <div>

@@ -42,7 +42,7 @@ const Formulario = () => {
     >
       <div className="form-group text-center container mb-3">
         <label>
-          <h2 className="form-texto">Ingrese un Anime o Manga</h2>
+          <h2 className="form-texto mt-5">Ingrese un Anime o Manga</h2>
         </label>
         <div className="">
           <input
