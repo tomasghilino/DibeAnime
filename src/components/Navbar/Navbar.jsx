@@ -14,6 +14,18 @@ const Navbar = () => {
   };
   window.addEventListener('scroll', navbarColor);
 
+  const scrollInicio = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+  const scrollBusqueda = () => {
+    window.scrollTo({
+      top: 873,
+      behavior: "smooth"
+    });
+  }
   return (
     <div className={color ? 'navbar' : 'navbar navbar-colored'}>
       <div className="navbar-contenido">
@@ -23,9 +35,14 @@ const Navbar = () => {
           </h1>
         </div>
         <div className="navbar-botones">
-          <button className="boton">Inicio</button>
-          <button className="boton">Busqueda</button>
-          <button className="boton">Nosotros</button>
+          <button
+           className="boton"
+           onClick={() => scrollInicio()}
+          >Inicio</button>
+          <button
+           className="boton"
+           onClick={() => scrollBusqueda()} 
+          >Busqueda</button>
         </div>
       </div>
     </div>

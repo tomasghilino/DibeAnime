@@ -58,7 +58,9 @@
 /* BOTONES */
 .navbar-botones {
   display: flex;
+  justify-content: space-evenly;
 }
+
 .boton {
   display: inline-block;
   padding: 0.5rem 1rem;
