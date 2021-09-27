@@ -30,9 +30,12 @@ const Navbar = () => {
     <div className={color ? 'navbar' : 'navbar navbar-colored'}>
       <div className="navbar-contenido">
         <div className="navbar-logo">
-          <h1 className="logo">
+          <a
+           className="logo"
+           onClick={() => scrollInicio()}
+          >
             Dibe<span>Anime</span>
-          </h1>
+          </a>
         </div>
         <div className="navbar-botones">
           <button
