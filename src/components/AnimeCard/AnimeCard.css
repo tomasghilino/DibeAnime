@@ -23,3 +23,14 @@
 .sinopsis {
   background-color: rgb(255, 228, 228);
 }
+
+.anime-hover:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+
+  -webkit-transition: all 0.2s 0.1s ease-in;
+  -moz-transition: all 0.2s 0.1s ease-in;
+  -o-transition: all 0.2s 0.1s ease-in;
+  transition: all 0.2s 0.1s ease-in;
+}
